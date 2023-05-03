@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Book</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Libreria de Contactos
+            <img src="https://i.ibb.co/x50wtLw/pngwing-com.png"
+            alt=""
+            width="34px">
+        </h1>
+    </header>
+
+    <div class="envoltura">
+        <main class="container">
+            <!--agregar contactos-->
+            <div class="add-container">
+                <label for="name">Agregar Nuevo Contacto</label>
+                <div class="space"></div>
+                <div class="addInputs">
+                    <input type="text" id="name" placeholder="Introdusca el nombre" required>
+                    <input type="text" id="number" placeholder="Introdusca el numero" maxlength="10" required>
+                </div>
+                <button type="submit" id="addContact" onclick="addContact()">
+                    Agregar
+                </button>
+                <p id="displayNoti"></p>
+            </div>
+    
+            <!--ir a los contactos-->
+            <div class="get-container">
+                <label for="getContact">Buscar Contactos agregados</label>
+                <div class="getInputs">
+                    <input type="text"id="getContactName" placeholder="Nombre Del Contacto" required>
+                    <button type="submit" id="getContact" onclick="getContact()">Buscar</button>
+                </div>
+                <p id="displayContact"></p>
+                <div class="reset" onclick="reset()">Borrar</div>
+            </div>
+        </main>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <a href="https://www.instagram.com/juanjose_55">By juanDesing</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
